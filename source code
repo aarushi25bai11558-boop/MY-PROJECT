@@ -1,5 +1,5 @@
 def calculate_bmi(weight_kg, height_m):
-    # BMI formula: weight (kg) / height (m)^2
+    
     return weight_kg / (height_m ** 2)
 
 def bmi_category(bmi):
@@ -11,8 +11,7 @@ def bmi_category(bmi):
         return "Overweight"
     else:
         return "Obese"
-
-# Get user input
+    
 weight = float(input("Enter your weight in kilograms: "))
 height = float(input("Enter your height in meters: "))
 
