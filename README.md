@@ -1,2 +1,34 @@
-# MY-PROJECT
-Academic Analytics Data Warehouse Project Report1. Project ObjectiveThe goal of this project is to apply Data Warehousing concepts to create a unified, subject-oriented, and historical repository for academic data. This will enable data-driven decision-making regarding student success and institutional efficiency.Identifying a meaningful problem: The challenge of fragmented data across Student Information Systems (SIS) and Learning Management Systems (LMS) leading to poor analytical capability.Designing a technical solution: Implementing a Star Schema Data Warehouse using PostgreSQL and a Python-based ETL process.Implementing the solution: Developing the dimensional model and the ETL logic, including Slowly Changing Dimensions (SCD).Demonstrating understanding: Evidenced by the use of dimensional modeling, ETL orchestration (Airflow), and SCD Type 2 for historical tracking.2. Scope & Requirements2.1 Functional Requirements (FR)Your project must include at least three major functional modules:Three major functional modules:Data Source Integration (Extraction Module): Integrates data from disparate sources (SIS, LMS, Financials). (FR1)Data Transformation & Cleansing (Transformation Module): Cleanses, applies SCD logic, and calculates derived measures (e.g., standardized Grade_Point). (FR2, FR3)Reporting & Analytics (BI Layer): Supports slicing/dicing of data for reports and dashboards. (FR4)A logical workflow of how the user interacts with the system: The final user (Academic Staff/Registrar) interacts with the Business Intelligence Layer (Tableau/Power BI), which queries the optimized Fact and Dimension tables in the Data Warehouse.2.2 Non-Functional Requirements (NFR)You must specify at least four (4) non-functional requirements:IDRequirementDescriptionNFR1Performance (Query)80% of standard analytical reports must execute in under 10 seconds.NFR2Reliability (Data Latency)The data warehouse must be refreshed daily (24-hour latency) via an automated ETL job.NFR3ScalabilityThe design must accommodate a 50% growth in student enrollment over 5 years.NFR4UsabilityThe final BI reporting interface must be intuitive for non-technical academic staff.3. Technical ExpectationsProper architectural design: Classic three-layer Data Warehouse architecture (Source, Staging/ETL, Data Warehouse, BI Layer).Correct application of subject concepts: Utilizes Star Schema, Surrogate Keys, and SCD Type 2.Modular and clean implementation: ETL logic is separated into distinct, reusable Python modules (extractor, transformer, loader).Version control usage (Git): All source code (ETL scripts, DDL) is managed in a GitHub repository.Minimum 5-10 meaningful modules/classes/files: Includes sis_extractor.py, lms_transformer.py, dw_loader.py, scd_logic.py, grade_calc.py, airflow_dag.py, and database DDL scripts.
+● Project title: BMI CALCULATOR 
+
+
+● Overview of the project on bmi calculatorA:
+BMI calculator project involves creating a tool that takes a user's height and weight to calculate their Body Mass Index (BMI), which categorizes their weight status as underweight, healthy weight, overweight, or obese. The project aims to provide a simple, user-friendly way to assess health risks associated with weight, often including additional inputs like age and gender to refine the results and offer personalized health recommendations.
+
+
+
+● Features
+A standard BMI calculator is a user-friendly tool that requires a few simple inputs to provide a quick assessment of an individual's weight status. Key features include: 
+
+Height and Weight Entry
+Age and Gender (for children/teens)
+Optional Inputs
+
+
+
+Instructions for testing
+ Verify the formula implementationTest with a variety of inputs
+Validate the output and categorizationTest boundary cases
+
+
+Technologies/tools used ON BMI CALCULATOR
+
+Frontend Development (User Interface):
+HTML: Provides the structure of the calculator, including input fields for height and weight, and elements to display results.
+CSS: Used for visual styling, layout, and ensuring the interface is responsive and user-friendly across different devices.
+JavaScript: The primary technology for the actual calculation, input validation, and dynamically updating the results on the web page without needing to reload.
+Frameworks/Libraries: Modern applications may use frameworks like React, Angular, or Vue.js for building more complex, dynamic user interfaces, and styling frameworks like Tailwind CSS or Bootstrap for design.
+
+
+screenshot:
+
+<img width="1920" height="1080" alt="Screenshot (126)" src="https://github.com/user-attachments/assets/f5b29780-f423-43c3-900e-c4d93d94f495" />
